@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite40"
+    android:paddingLeft="@dimen/padding_item_history"
+    android:paddingRight="@dimen/padding_item_history"
+    android:paddingBottom="@dimen/padding_item_history"
+    android:paddingTop="@dimen/padding_item_history">
+<!--
+    <TextView
+        android:id="@+id/txt_bt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23/10/2017 15:30:32"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true" />-->
+
+    <!-- Nombre -->
+
+<!--    <ImageView
+        android:id="@+id/img_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/subtitle_height"
+        android:src="@drawable/img_temperature"
+        android:layout_below="@+id/txt_time" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bt_name_title"
+        android:text="@string/devices_bt_name"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/space_between_text_history"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bt_name"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@id/txt_bt_name_title"
+        android:layout_toEndOf="@+id/txt_bt_name_title"
+        android:layout_marginBottom="@dimen/space_between_text_history_row"/>
+
+    <!-- Direccion -->
+
+<!--    <ImageView
+        android:id="@+id/img_smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/subtitle_height"
+        android:src="@drawable/img_smoke"
+        android:layout_below="@+id/txt_temperature_value" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bt_address_title"
+        android:text="@string/devices_bt_address"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:layout_below="@+id/txt_bt_name"
+        android:layout_marginTop="@dimen/space_between_text_history"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bt_address"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@id/txt_bt_address_title"
+        android:layout_toEndOf="@+id/txt_bt_address_title"
+        android:layout_marginBottom="@dimen/space_between_text_history_row"/>
+
+
+
+</RelativeLayout>

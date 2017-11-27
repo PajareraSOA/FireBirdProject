@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">firebirdone</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_main">FireBird</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="history_temperature"> Temperatura: </string>
+    <string name="history_smoke"> Humo: </string>
+    <string name="history_flame"> Fuego: </string>
+    <string name="history_food"> Comida: </string>
+    <string name="history_water"> Agua: </string>
+
+    <string name="devices_bt_name"> Nombre: </string>
+    <string name="devices_bt_address"> Dirección: </string>
+</resources>

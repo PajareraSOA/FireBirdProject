@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/fragment_top_padding"
+    tools:context="com.loscache.firebirdone.gui.InfoActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/subtitle_height"
+        app:srcCompat="@drawable/title_info"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35.5º"
+        android:background="@drawable/temperature"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/initial_margin_top" />
+
+    <TextView
+        android:id="@+id/txtSmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No detectado"
+        android:background="@drawable/smoke"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/txtTemperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_between_text"/>
+
+    <TextView
+        android:id="@+id/txtFlame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No detectado"
+        android:background="@drawable/flame"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/txtSmoke"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_between_text" />
+
+    <TextView
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alto"
+        android:background="@drawable/food"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/txtFlame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_between_text" />
+
+    <TextView
+        android:id="@+id/txtWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medio"
+        android:background="@drawable/water"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/txtFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_between_text" />
+
+    <ImageView
+        android:id="@+id/txtSwipeToHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/help_history_right"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
