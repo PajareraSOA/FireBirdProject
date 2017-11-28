@@ -7,9 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import static com.loscache.firebirdone.data.DataReaderContract.SQL_CREATE_ENTRIES;
 import static com.loscache.firebirdone.data.DataReaderContract.SQL_DELETE_ENTRIES;
 
-/**
- * Created by cdsac on 06/11/2017.
- */
+
 
 public class DataReaderDbHelper extends SQLiteOpenHelper {
 

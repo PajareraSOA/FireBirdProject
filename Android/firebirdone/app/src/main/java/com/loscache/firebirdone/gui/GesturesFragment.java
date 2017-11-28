@@ -1,8 +1,5 @@
 package com.loscache.firebirdone.gui;
 
-/**
- * Created by cdsac on 22/10/2017.
- */
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

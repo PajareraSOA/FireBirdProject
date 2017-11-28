@@ -32,19 +32,10 @@ import static android.hardware.Sensor.TYPE_PROXIMITY;
 
 public class InfoActivity extends AppCompatActivity {
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
+
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
+
     private ViewPager mViewPager;
     private SensorManager sensorManager;
     private GesturesListener gesturesListener;
@@ -74,8 +65,7 @@ public class InfoActivity extends AppCompatActivity {
 
 
 
-/*        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);*/
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -88,10 +78,8 @@ public class InfoActivity extends AppCompatActivity {
 
         bluetoothDevice = (BluetoothDevice) getIntent().getExtras().getParcelable("BluetoothDevice");
 
-       /* TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);*/
+
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-       // gesturesListener = new GesturesListener((sensorManager.getDefaultSensor(TYPE_PROXIMITY)).getMaximumRange(), bluetoothSocket);
 
 
 
@@ -190,10 +178,7 @@ public class InfoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -203,9 +188,7 @@ public class InfoActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
-            //Bundle dbContextBundle = new Bundle();
-            //dbContextBundle.putSerializable("dbcontext", dbContext);
-            //dbContextBundle.putString("dbcontext", "hola");
+
             switch (position){
                 case 0:
                     Log.i("TABS", "cree 0");

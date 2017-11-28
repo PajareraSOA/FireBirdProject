@@ -1,8 +1,6 @@
 package com.loscache.firebirdone.gui;
 
-/**
- * Created by cdsac on 22/10/2017.
- */
+
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -42,16 +40,13 @@ public class HistoryFragment extends Fragment {
         if(dbContext != null){
            historyRowObjects = dbContext.getAllHistories();
         }
- /*     historyRowObjects.add(new MeasurementHistoryModel(Calendar.getInstance().getTime().toLocaleString(), "35.5º", "No detectado", "No detectado", "Alto", "Medio"));
-        historyRowObjects.add(new MeasurementHistoryModel(Calendar.getInstance().getTime().toLocaleString(), "39.2º", "No detectado", "Detectado", "Alto", "Medio"));
-        historyRowObjects.add(new MeasurementHistoryModel(Calendar.getInstance().getTime().toLocaleString(), "46.8º", "Detectado", "Detectado", "Alto", "Bajo"));*/
+
 
         listview.setAdapter(
                 new HistoryRowAdapter(this.getContext(),
                         historyRowObjects));
 
         // How to add items to the list view
-        //((HistoryRowAdapter) listview.getAdapter()).addItem(new HistoryRowObject(Calendar.getInstance().getTime(), "50.8º", "Detectado", "Detectado", "Alto", "Bajo") );
         Log.i("DEBUG", "HistoryCreateFragment");
 
         runAsyncTask();

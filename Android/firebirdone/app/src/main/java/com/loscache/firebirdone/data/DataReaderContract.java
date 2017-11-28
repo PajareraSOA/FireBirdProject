@@ -5,14 +5,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-/**
- * Created by cdsac on 05/11/2017.
- */
+
 
 public class DataReaderContract {
 
-    // To prevent someone from accidentally instantiating the contract class,
-    // make the constructor private.
+
     private DataReaderContract() {}
 
     // Queries to create db
@@ -32,7 +29,7 @@ public class DataReaderContract {
     public static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + DataMeasurements.TABLE_NAME;
 
-    /* Inner class that defines the table contents */
+
     public static class DataMeasurements implements BaseColumns {
         public static final String TABLE_NAME = "measurements";
         public static final String COLUMN_NAME_TEMPERATURE = "temperature";

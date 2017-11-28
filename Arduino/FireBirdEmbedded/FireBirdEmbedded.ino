@@ -143,7 +143,7 @@ void setup() {
 
   // Configurar la velocidad de transmisión
   btSerial.begin(9600);
-  Serial.begin(9600);
+  
 
 }
 
@@ -300,7 +300,7 @@ void checkMeasurements() {
     }
   }
 
-  Serial.println("sigo lupeando");
+  
   // Resetear cada 5 segundos
   if (timeCounter == 50) {
     timeCounter = 0;

@@ -12,9 +12,7 @@ import com.loscache.firebirdone.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by ClaudioSaccella on 4/11/2017.
- */
+
 
 public class GesturesRowAdapter extends BaseAdapter {
 
@@ -23,7 +21,6 @@ public class GesturesRowAdapter extends BaseAdapter {
     private static LayoutInflater inflater = null;
 
     public GesturesRowAdapter(Context context, ArrayList<GestureRowObject> data) {
-        // TODO Auto-generated constructor stub
         this.context = context;
         this.data = data;
         inflater = (LayoutInflater) context

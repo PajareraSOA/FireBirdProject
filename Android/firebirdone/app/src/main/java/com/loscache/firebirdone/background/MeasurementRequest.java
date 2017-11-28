@@ -18,9 +18,6 @@ import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.Random;
 
-/**
- * Created by ClaudioSaccella on 8/11/2017.
- */
 
 public class MeasurementRequest extends AsyncTask<Integer, MeasurementModel, Integer> {
 
@@ -66,11 +63,7 @@ public class MeasurementRequest extends AsyncTask<Integer, MeasurementModel, Int
                     String smoke = String.valueOf(result.getInt("smoke"));
                     String food = String.valueOf(result.getInt("food"));
                     String water = String.valueOf(result.getInt("water"));
-                    //String temperature = (rnd.nextInt(10) + 30) + "." + rnd.nextInt(10) + "º";
-                    /*String flame = rnd.nextBoolean() ? "Detectado" : "No detectado";
-                    String smoke = rnd.nextBoolean() ? "Detectado" : "No detectado";
-                    String food = rnd.nextBoolean() ? "Alto" : "Medio";
-                    String water = rnd.nextBoolean() ? "Alto" : "Bajo";*/
+
 
                     // fin leer ultima medicion
                     publishProgress(

@@ -9,9 +9,7 @@ import com.loscache.firebirdone.gui.HistoryRowAdapter;
 
 import java.util.ArrayList;
 
-/**
- * Created by ClaudioSaccella on 7/11/2017.
- */
+
 
 public class HistoryRefresh extends AsyncTask<Integer, MeasurementModel, Integer> {
 

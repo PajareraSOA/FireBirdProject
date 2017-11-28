@@ -13,9 +13,7 @@ import com.loscache.firebirdone.data.MeasurementModel;
 
 import java.util.ArrayList;
 
-/**
- * Created by cdsac on 17/11/2017.
- */
+
 
 public class DevicesRowAdapter  extends BaseAdapter {
 

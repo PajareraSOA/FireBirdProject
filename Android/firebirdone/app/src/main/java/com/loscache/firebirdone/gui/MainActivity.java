@@ -64,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 // until it succeeds or throws an exception
                 DevicesRowAdapter devicesRowAdapter = (DevicesRowAdapter) listview.getAdapter();
                 BluetoothDevice bluetoothDevice = (BluetoothDevice) devicesRowAdapter.getItem(i);
-                  /*  bluetoothSocket = bluetoothDevice.createRfcommSocketToServiceRecord(MY_UUID);
-                    bluetoothSocket.connect();*/
+
 
 
                 // Iniciar activity con el bluetooth socket
@@ -92,8 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        /*Intent i = new Intent(MainActivity.this, InfoActivity.class);
-                        startActivity(i);*/
+
                         if (!mBluetoothAdapter.isEnabled()) {
                             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
@@ -118,23 +116,19 @@ public class MainActivity extends AppCompatActivity {
             String action = intent.getAction();
 
             DevicesRowAdapter devicesRowAdapter = (DevicesRowAdapter) listview.getAdapter();
-            //Toast.makeText(getApplicationContext(), action, Toast.LENGTH_SHORT).show();
 
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                //bluetoothDevices.add((BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE));
-                //Toast.makeText(getApplicationContext(), "Encontré uno", Toast.LENGTH_SHORT).show();
+
                 devicesRowAdapter.addItem((BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE));
                 devicesRowAdapter.notifyDataSetChanged();
 
             } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
-                //bluetoothDevices.clear();
                 devicesRowAdapter.clear();
                 progressDialog.show();
             } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
                 progressDialog.dismiss();
-                //ArrayList<BluetoothDevice> bluetoothPairedDevices = new ArrayList<BluetoothDevice>(mBluetoothAdapter.getBondedDevices());
 
-                // Aca mostrarlos en la lista
+
             }
         }
     };

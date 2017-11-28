@@ -12,9 +12,7 @@ import com.loscache.firebirdone.data.DataReaderDbContext;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/**
- * Created by cdsac on 05/11/2017.
- */
+
 
 public class GesturesListener implements SensorEventListener {
 
@@ -115,7 +113,7 @@ public class GesturesListener implements SensorEventListener {
                     }
 
                     if(antiClockWise && clockWise) {
-                        // TO DO WHIP
+
                         Log.i("SENSOR", "GIROSCOPE");
                         sendToDevice(ACTION_WATER);
                         antiClockWise = false;

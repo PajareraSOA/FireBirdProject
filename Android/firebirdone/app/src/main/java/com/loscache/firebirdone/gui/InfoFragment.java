@@ -1,8 +1,6 @@
 package com.loscache.firebirdone.gui;
 
-/**
- * Created by cdsac on 22/10/2017.
- */
+
 
 import android.os.AsyncTask;
 import android.os.Bundle;

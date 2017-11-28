@@ -6,9 +6,6 @@ import android.os.Parcelable;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by cdsac on 05/11/2017.
- */
 
 public class MeasurementModel {
 

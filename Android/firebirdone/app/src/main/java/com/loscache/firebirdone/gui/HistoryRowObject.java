@@ -2,9 +2,7 @@ package com.loscache.firebirdone.gui;
 
 import java.util.Date;
 
-/**
- * Created by cdsac on 27/10/2017.
- */
+
 
 public class HistoryRowObject {
 

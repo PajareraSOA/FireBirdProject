@@ -7,9 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/**
- * Created by cdsac on 05/11/2017.
- */
+
 
 public class DataReaderDbContext implements Serializable {
 
@@ -165,8 +163,8 @@ public class DataReaderDbContext implements Serializable {
                         "(SELECT MIN(" + DataReaderContract.DataMeasurements._ID + ") " +
                         "FROM " + DataReaderContract.DataMeasurements.TABLE_NAME + " " +
                         "WHERE is_history = 'true')";
-/*        // Specify arguments in placeholder order.
-        String[] selectionArgs = { "MyTitle" };*/
+       // Specify arguments in placeholder order.
+
         // Issue SQL statement.
         db.delete(DataReaderContract.DataMeasurements.TABLE_NAME, selection, null);
     }
@@ -190,8 +188,8 @@ public class DataReaderDbContext implements Serializable {
                         "FROM " + DataReaderContract.DataMeasurements.TABLE_NAME + " " +
                         "WHERE is_history = 'false')" +
                         "AND is_history = 'false'";
-/*        // Specify arguments in placeholder order.
-        String[] selectionArgs = { "MyTitle" };*/
+        // Specify arguments in placeholder order.
+
         // Issue SQL statement.
         db.delete(DataReaderContract.DataMeasurements.TABLE_NAME, selection, null);
     }
