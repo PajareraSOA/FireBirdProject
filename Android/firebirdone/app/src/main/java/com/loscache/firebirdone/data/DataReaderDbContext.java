@@ -86,7 +86,7 @@ public class DataReaderDbContext implements Serializable {
                     c.getString(c.getColumnIndexOrThrow(DataReaderContract.DataMeasurements.COLUMN_NAME_FLAME)),
                     c.getString(c.getColumnIndexOrThrow(DataReaderContract.DataMeasurements.COLUMN_NAME_FOOD)),
                     c.getString(c.getColumnIndexOrThrow(DataReaderContract.DataMeasurements.COLUMN_NAME_WATER)),
-                    c.getString(c.getColumnIndexOrThrow(DataReaderContract.DataMeasurements.COLUMN_NAME_IS_HISTORY)) == "true" ? true : false
+                    c.getString(c.getColumnIndexOrThrow(DataReaderContract.DataMeasurements.COLUMN_NAME_IS_HISTORY)).equals("true")
                 );
                 mArray.add(m);
             } while(c.moveToNext());

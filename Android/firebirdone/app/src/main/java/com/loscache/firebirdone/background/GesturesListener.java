@@ -126,9 +126,6 @@ public class GesturesListener implements SensorEventListener {
                        Log.i("SENSOR", "PROXIMITY_NEAR");
                        sendToDevice(ACTION_SOUND);
                         // TO DO NEAR
-                    } else {
-                       Log.i("SENSOR", "PROXIMITY_AWAY");
-                        // TO DO AWAY
                     }
                     break;
             }
